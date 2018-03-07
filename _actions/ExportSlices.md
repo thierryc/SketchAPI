@@ -1,5 +1,6 @@
 ---
 title: ExportSlices
+documented: true
 summary: Triggered whenever the user exports some artboards, layers or slices.
 ---
 

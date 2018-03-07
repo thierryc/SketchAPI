@@ -1,5 +1,6 @@
 ---
 title: AddAsLibrary
+documented: true
 summary: An open document is saved as a Library
 ---
 

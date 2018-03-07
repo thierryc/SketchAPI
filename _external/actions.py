@@ -263,5 +263,5 @@ if not os.path.exists(actionsPath):
 
 for action in allActions:
     with open(os.path.join(actionsPath, action +".md"), "w") as f:
-        stub = "---\ntitle: {0}\nsummary: work in progress\n---\n\nWork In Progress\n\nDocumentation for the {0} action will appear here.".format(action)
+        stub = "---\ntitle: {0}\nsummary: work in progress\ndocumented: false\n---\n\nWork In Progress\n\nDocumentation for the {0} action will appear here.".format(action)
         f.write(stub)
