@@ -1,8 +1,17 @@
 ---
 title: RunPluginCommand
-summary: work in progress
+trigger: A Plugin runs
+documented: true
 ---
 
-Work In Progress
+The `RunPluginCommand` action is triggered when a Plugin runs.
 
-Documentation for the RunPluginCommand action will appear here.
+## Action Context
+
+The action context for this action contains one key:
+
+- `command`: the ID of the Plugin being run (or `com.bohemiancoding.sketch.runscriptidentifier` if the Plugin code was run from the *Run Script…* panel).
+
+## Examples
+
+No examples yet.
