@@ -1,8 +1,15 @@
 ---
 title: CloseDocument
-summary: work in progress
+trigger: A Document is closed
+documented: true
 ---
 
-Work In Progress
+The `CloseDocument` action is triggered when a Document is closed.
 
-Documentation for the CloseDocument action will appear here.
+## Action Context
+
+This action receives the [default context](/guides/action-api/#default-action-context).
+
+## Examples
+
+No examples yet.
