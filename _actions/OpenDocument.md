@@ -1,8 +1,15 @@
 ---
 title: OpenDocument
-summary: work in progress
+trigger: A Document is opened
+documented: true
 ---
 
-Work In Progress
+The `OpenDocument` action is triggered when a Document is opened.
 
-Documentation for the OpenDocument action will appear here.
+## Action Context
+
+This action receives the [default context](/guides/action-api/#default-action-context).
+
+## Examples
+
+No examples yet.
