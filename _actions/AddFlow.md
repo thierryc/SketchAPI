@@ -1,8 +1,15 @@
 ---
 title: AddFlow
-summary: work in progress
+trigger: A Flow is added to a Layer
+documented: true
 ---
 
-Work In Progress
+The `AddFlow` action is triggered when a Flow is added to a Layer.
 
-Documentation for the AddFlow action will appear here.
+## Action Context
+
+This action receives the [default context](/guides/action-api/#default-action-context).
+
+## Examples
+
+No examples yet.
