@@ -1,8 +1,21 @@
 ---
 title: HandlerLostFocus
-summary: work in progress
+trigger: A Sketch tool becomes inactive
+documented: true
 ---
 
-Work In Progress
+The `HandlerLostFocus` action is triggered when a Sketch tool becomes inactive.
 
-Documentation for the HandlerLostFocus action will appear here.
+## Action Context
+
+The action context for this action contains one key:
+
+- `name`: the Name of the Tool that was deactivated.
+
+## Examples
+
+No examples yet.
+
+## Related
+
+- [HandlerGotFocus](/reference/action/handlergotfocus/)
