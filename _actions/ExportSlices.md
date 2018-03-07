@@ -12,7 +12,7 @@ The action context for this action contains two keys:
 * `document`: the document that the change occurred in. **Note:** currently, this is an instance of `MSImmutableDocumentData`, and not the more usual `MSDocument` instance. This is likely to be corrected in a future update of Sketch.
 * `exports`: a list of the items that were exported. Each entry in this list is a dictionary -- see [Exports List](#exports-list) below for more details.
 
-## Exports List
+### Exports List
 
 Each entry in the `exports` property of the action context is a dictionary containing two keys:
 
