@@ -1,8 +1,19 @@
 ---
 title: DocumentSaved
-summary: work in progress
+trigger: A Document is saved
+documented: true
 ---
 
-Work In Progress
+The `DocumentSaved` action is triggered when a Document is saved (either by user interaction, or via the AutoSave mechanism in macOS).
 
-Documentation for the DocumentSaved action will appear here.
+## Action Context
+
+The action context for this action contains three keys:
+
+- `size`: the filesize of the Document, in bytes.
+- `autosaved`: `0` if the Document was saved manually, `1` if it was autosaved.
+- `document`: a reference to the Document being saved.
+
+## Examples
+
+No examples yet.
