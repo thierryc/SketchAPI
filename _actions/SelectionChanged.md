@@ -1,7 +1,7 @@
 ---
 title: SelectionChanged
 documented: true
-summary: User changes which layers are selected in a document
+trigger: User changes which layers are selected in a document
 ---
 
 The `SelectionChanged` action is triggered when a user changes which layers are selected in a document.

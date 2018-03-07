@@ -1,7 +1,7 @@
 ---
 title: AddAsLibrary
 documented: true
-summary: An open document is saved as a Library
+trigger: An open document is saved as a Library
 ---
 
 The `AddAsLibrary` action is triggered when an open document is saved as a Library, using the **File › Add as Library…** menu option.

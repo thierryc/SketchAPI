@@ -1,6 +1,6 @@
 ---
 title: ArtboardChanged
-summary: Current Artboard changes
+trigger: Current Artboard changes
 documented: true
 ---
 

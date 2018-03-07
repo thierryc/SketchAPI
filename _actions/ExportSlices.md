@@ -1,7 +1,7 @@
 ---
 title: ExportSlices
+trigger: User exports some artboards, layers or slices.
 documented: true
-summary: User exports some artboards, layers or slices.
 ---
 
 The `ExportSlices` action is triggered when the user exports some Artboards, Layers or Slices.
