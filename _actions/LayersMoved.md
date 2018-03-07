@@ -1,8 +1,18 @@
 ---
 title: LayersMoved
-summary: work in progress
+trigger: User moves Layers
+documented: true
 ---
 
-Work In Progress
+The `LayersMoved` action is triggered when the user moves one or more Layers in the Canvas.
 
-Documentation for the LayersMoved action will appear here.
+## Action Context
+
+The action context for this action contains two keys:
+
+- `document`: the document that the change occurred in.
+- `layers`: an Array containing references to the Layers that were moved.
+
+## Examples
+
+No examples yet.
