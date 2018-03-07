@@ -2,8 +2,8 @@
 
 import os
 
+# Sketch 49.0
 actions = [
-    "AddAsLibrary",
     "AddBorder",
     "AddExportFormat",
     "AddFill",
@@ -148,8 +148,6 @@ actions = [
     "NewPage",
     "NextPage",
     "OpenPreview",
-    "OpenStyleInLibrary",
-    "OpenSymbolInLibrary",
     "OvalShape",
     "Paste",
     "PasteHere",
@@ -227,8 +225,6 @@ actions = [
     "Undo",
     "Ungroup",
     "Union",
-    "UnlinkAndSyncSharedStyle",
-    "UnlinkSharedStyle",
     "UpdatePlugins",
     "ViewMenu",
     "Zoom",
@@ -236,22 +232,25 @@ actions = [
     "ZoomIn",
     "ZoomOut",
     "ZoomToActualSize",
-    "ZoomToArtboard",
     "ZoomToSelection"
 ]
 
-fakeActions = [
+documentedActions = [
+    "AddAsLibrary",
     "ArtboardChanged",
+    "ExportSlices",
+    "SelectionChanged"
+]
+
+fakeActions = [
     "CloseDocument",
     "DocumentSaved",
-    "ExportSlices",
     "HandlerGotFocus",
     "HandlerLostFocus",
     "HandleURL",
     "LayersMoved",
     "OpenDocument",
     "RunPluginCommand",
-    "SelectionChanged",
     "TextChanged"
 ]
 
@@ -263,5 +262,21 @@ if not os.path.exists(actionsPath):
 
 for action in allActions:
     with open(os.path.join(actionsPath, action +".md"), "w") as f:
-        stub = "---\ntitle: {0}\nsummary: work in progress\ndocumented: false\n---\n\nWork In Progress\n\nDocumentation for the {0} action will appear here.".format(action)
-        f.write(stub)
+        template = """---
+title: {actionName}
+trigger: TBD
+documented: false
+---
+
+The `{actionName}` action is triggered when…
+
+## Action Context
+
+This action receives the [default context](/guides/action-api/#default-action-context).
+
+## Examples
+
+No examples yet.
+"""
+
+        f.write(template.format(actionName=action))
