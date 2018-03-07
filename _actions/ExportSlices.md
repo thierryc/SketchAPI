@@ -1,6 +1,6 @@
 ---
 title: ExportSlices
-trigger: User exports some artboards, layers or slices.
+trigger: User exports some Artboards, Layers or Slices.
 documented: true
 ---
 
@@ -10,7 +10,7 @@ The `ExportSlices` action is triggered when the user exports some Artboards, Lay
 
 The action context for this action contains two keys:
 
-* `document`: the document that the change occurred in. **Note:** currently, this is an instance of `MSImmutableDocumentData`, and not the more usual `MSDocument` instance. This is likely to be corrected in a future update of Sketch.
+* `document`: the Document that the change occurred in. **Note:** currently, this is an instance of `MSImmutableDocumentData`, and not the more usual `MSDocument` instance. This is likely to be corrected in a future update of Sketch.
 * `exports`: a list of the items that were exported. Each entry in this list is a dictionary -- see [Exports List](#exports-list) below for more details.
 
 ### Exports List
