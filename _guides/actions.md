@@ -48,7 +48,15 @@ Save everything, build the plugin and now whenever you open a document in Sketch
 
 When an action is triggered, Sketch can send the target function some information about the action itself (like the selected layers when the selection changes, or the current document when a new document is opened). We call that the Action Context, and you can access it from the `context` that is sent as a parameter of the target function using `context.actionContext`.
 
-Keep in mind, though, that **not all actions set an Action Context yet**. In fact, most of them don't at the moment, so if you think there's something you'd like to access in an Action Context, send us a note and we'll add it as soon as possible.
+### Default Action Context
+
+By default, actions receive an Action Context with two keys: `document` (which is a reference to the document where the action happened), and `action` (which is a reference to the action that was triggered).
+
+### Custom Action Context
+
+While most actions will get the default context, some actions get a custom Action Context, specifically suited to the action that was triggered. For example, the `LayersMoved` action gets a context where `document` and `layers` (a list of the layers that were moved) are defined, but `action` is not.
+
+If you think there's something you'd like to access in an Action Context, send us a note and we'll add it as soon as possible.
 
 ## `begin`/`finish` actions
 
