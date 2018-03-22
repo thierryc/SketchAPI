@@ -54,6 +54,7 @@ globals:
   MSHotspotLayer: false
   NSPredicate: false
   MSRectangleShape: false
+  MSSliceLayer: false
 
 rules:
   ###########
