@@ -8,7 +8,8 @@ test('should create a new slice', () => {
   expect(slice.type).toBe('Slice')
 })
 
-test('should create a new shape with the default style', () => {
+test('should create a new slice with the default size', () => {
   const slice = new Slice()
   expect(slice.type).toBe('Slice')
+  // TODO add revelent test.
 })
