@@ -43,6 +43,21 @@ Slice.type = Types.Slice
 Slice[DefinedPropertiesKey] = { ...Layer[DefinedPropertiesKey] }
 Factory.registerClass(Slice, MSShapeGroup)
 
+/*
+slice.exportOptions().setLayerOptions(2)
+slice.exportOptions().removeAllExportFormats();
+size = slice.exportOptions().addExportFormat();
+size.setName('');
+size.setScale(1);
+*/
+
+Slice.define('exportOptions', {
+  get() {
+    return null
+  },
+  set() {},
+})
+
 Slice.define('style', {
   get() {
     return Style.fromNative(this._object.style())

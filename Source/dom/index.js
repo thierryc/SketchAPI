@@ -8,6 +8,7 @@ import { Group } from './components/Group'
 import { Text } from './components/Text'
 import { Image } from './components/Image'
 import { Shape } from './components/Shape'
+import { Slice } from './components/Slice'
 import { Artboard } from './components/Artboard'
 import { Page } from './components/Page'
 import { SymbolMaster } from './components/SymbolMaster'
@@ -25,6 +26,7 @@ api.Group = Group
 api.Text = Text
 api.Image = Image
 api.Shape = Shape
+api.Slice = Slice
 api.Artboard = Artboard
 api.Page = Page
 api.SymbolMaster = SymbolMaster
