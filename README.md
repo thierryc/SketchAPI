@@ -162,6 +162,15 @@ defaults write com.bohemiancoding.sketch3 SketchAPILocation "/path/to/your/Sketc
 
 Sketch will then load the external .js file instead of the bundled version.
 
+To restore the bundled version.
+
+```
+
+defaults delete com.bohemiancoding.sketch3 SketchAPILocation
+
+```
+
+
 ### Testing
 
 To run the tests, you can use
